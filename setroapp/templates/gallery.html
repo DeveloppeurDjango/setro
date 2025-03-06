@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<section id="portfolio" class="scrollspy-section bg-dark padding-large">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="section-header">
+                    <div class="title">
+       
+                    </div>
+                    <h2 class="section-title light">Gallery</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div id="filters" class="button-group d-flex flex-wrap gap-4 py-5" data-aos="fade-up">
+                <a href="#" class="btn btn-outline-light rounded-pill text-uppercase is-checked"
+                    data-filter=".design">Gallery 1</a>
+                <a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
+                    data-filter=".interior">Gallery 2</a>
+                <a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
+                    data-filter=".landscape">Gallery 3</a>
+                <a href="#" class="btn btn-outline-light rounded-pill text-uppercase"
+                    data-filter=".construction">Gallery 4</a>
+            </div>
+
+        </div>
+
+        <div class="grid p-0 clearfix row row-cols-2 row-cols-lg-3 row-cols-xl-3" data-aos="fade-up">
+            <div class="col mb-4 portfolio-item construction interior">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 1."><img src="{% static 'images/portfolio-maison1.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item construction construction">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 2."><img src="{% static 'images/portfolio-maison2.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item construction">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 3."><img src="{% static 'images/portfolio-maison3.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item construction">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 4."><img src="{% static 'images/portfolio-maison4.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item interior">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 5."><img src="{% static 'images/portfolio-maison5.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item design">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 6."><img src="{% static 'images/portfolio-maison6.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item design">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 7."><img src="{% static 'images/portfolio-pompe4.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item design">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 8."><img src="{% static 'images/portfolio-pompe5.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item design">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 9."><img src="{% static 'images/portfolio-pompe3.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item design">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item1 0."><img src="{% static 'images/portfolio-pompe2.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item design">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item1 1."><img src="{% static 'images/portfolio-pompe1.jpg'%}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item construction">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item1 2."><img src="{% static 'images/portfolio-maison7.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item interior">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 1."><img src="{% static 'images/portfolio-maison8.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item landscape">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 2."><img src="{% static 'images/portfolio-maison9.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item landscape">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 3."><img src="{% static 'images/portfolio-maison10.jpg'%}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item interior">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 4."><img src="{% static 'images/portfolio-maison11.jpg'%}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item interior">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 5."><img src="{% static 'images/portfolio-maison12.jpg'%}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item interior">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 6."><img src="{% static 'images/portfolio-maison13.jpg'%}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item landscape">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 7."><img src="{% static 'images/portfolio-thumb-7.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item landscape">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item 8."><img src="{% static 'images/portfolio-thumb-8.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item landscape">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item1 0."><img src="{% static 'images/portfolio-thumb-10.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item construction">
+                <a href="{% static 'images/portfolio-large-1.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item1 1."><img src="{% static 'images/portfolio-thumb-11.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+            <div class="col mb-4 portfolio-item landscape">
+                <a href="{% static 'images/portfolio-large-2.jpg' %}" class="image-link"
+                    title="Sample Caption goes here for Portfolio Item1 2."><img src="{% static 'images/portfolio-thumb-1.jpg' %}"
+                        class="img-fluid" alt="portfolio"></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock content %}

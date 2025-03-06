@@ -1,0 +1,81 @@
+{% load static %}
+<div class="preloader"></div>
+
+<div class="nav nav-overlay">
+    <div class="nav__content">
+        <div class="container">
+            <div class="row p-4 p-md-0 flex-column-reverse flex-md-row g-md-5 nav__block">
+                <div class="col-md-5">
+               
+						<ul class="nav__list d-none d-md-block">
+							<li class="nav__list-item "><a href="{% url 'home' %}" class="hover-target">Accueil</a>
+							</li>
+							<li class="nav__list-item"><a href="{% url 'about' %}" class="hover-target">A propos</a></li>
+                            <li class="nav__list-item"><a href="{% url 'gallery' %}" class="hover-target">Gallery </a></li>
+							<li class="nav__list-item"><a href="{% url 'service' %}" class="hover-target">Services</a></li>                   
+							<li class="nav__list-item"><a href="{% url 'contact' %}" class="hover-target">Contact </a></li>
+						</ul>
+					</div>
+             
+   
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="main-logo">
+    <img src="{% static 'images/logo.png' %}" alt="logo" class="footer-logo">
+</div>
+
+<div class="side-nav-bar">
+    <input id="menu-toggle" type="checkbox" />
+    <label class="menu-btn" for="menu-toggle">
+        <span></span>
+    </label>
+</div>
+
+<section id="intro" class="scrollspy-section">
+    <div class="main-slider">
+        <div class="slider-item jarallax" data-speed="0.2">
+            <img src="{% static 'images/main-banner1.jpg' %}" alt="banner" class="jarallax-img">
+            <div class="banner-content">
+                <h2 class="banner-title txt-fx">SETRO SARL</h2>
+                <div class="btn-wrap">
+  
+                </div>
+            </div><!--banner-content-->
+        </div><!--slider-item-->
+
+        <div class="slider-item jarallax" data-speed="0.2">
+            <img src="{% static 'images/main-banner2.jpg' %}" alt="banner" class="jarallax-img">
+            <div class="banner-content">
+                <h2 class="banner-title txt-fx">SETRO SARL</h2>
+                <div class="btn-wrap">
+               
+                </div>
+            </div><!--banner-content-->
+        </div><!--slider-item-->
+
+        <div class="slider-item jarallax" data-speed="0.2">
+            <img src="{% static 'images/main-banner3.jpg' %}" alt="banner" class="jarallax-img">
+            <div class="banner-content">
+                <h2 class="banner-title txt-fx">SETRO SARL</h2>
+                <div class="btn-wrap">
+    
+            </div><!--banner-content-->
+        </div><!--slider-item-->
+    </div><!--slider-->
+
+    <div class="button-container">
+        <button class="prev slick-arrow">
+            <i class="icon icon-chevron-thin-left"></i>
+        </button>
+        <button class="next slick-arrow">
+            <i class="icon icon-chevron-thin-right"></i>
+        </button>
+    </div>
+</section>

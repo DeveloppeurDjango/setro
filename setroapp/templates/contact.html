@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<section id="contact" class="scrollspy-section bg-dark padding-large">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="left-content">
+                    <div class="section-header">
+                      
+                        <h2 class="section-title light">Contact </h2>
+                    </div>
+                    <p>Veuillez remplir le  formulaire pour nous contacter ! </p>
+                    <form id="form-contact" class="form-light" method="post" action="{% url 'contact' %}">
+                        {% csrf_token %}
+                        <p>
+                            <input type="text" name="nom" placeholder="Votre Nom*" value="{{ form.nom.value|default:'' }}" required>
+                        </p>
+                        <p>
+                            <input type="text" name="prenoms" placeholder="Votre Prenom*" value="{{ form.prenoms.value|default:'' }}" required>
+                        </p>
+                        <p>
+                            <input type="email" name="email" placeholder="Votre Email*" value="{{ form.email.value|default:'' }}" required>
+                        </p>
+                        <p>
+                            <input type="text" name="sujet" placeholder="Sujet*" value="{{ form.sujet.value|default:'' }}" required>
+                        </p>
+                        <p>
+                            <textarea name="message" placeholder="Votre Message*" required>{{ form.message.value|default:'' }}</textarea>
+                        </p>
+                        <p>
+                            <input type="submit" class="btn btn-accent btn-rounded btn-xlarge btn-full" value="Envoyer">
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="right-content">
+                    <div class="iconbox">
+                        <i class="icon icon-location"></i>
+                        <div class="detail">
+                            <strong>Adresse 1:</strong>
+                            <p>BP 7228, N’Djaména – Tchad</p>
+                        </div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="icon icon-location2"></i>
+                        <div class="detail">
+                            <strong>Adresse 2:</strong>
+                            <p>BP 87, Avenue Charles de Gaulle, N’Djaména – Tchad</p>
+                        </div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="icon icon-phone"></i>
+                        <div class="detail">
+                            <strong>Téléphone:</strong>
+                            <p>(+235) 66 09 96 94 / 92 60 11 78 / 66 44 83 46 / 98 80 92 95</p>
+                        </div>
+                    </div>
+                    <div class="iconbox">
+                        <i class="icon icon-mail3"></i>
+                        <div class="detail">
+                            <strong>Email:</strong>
+                            <p><a href="mailto:setrosarl.int@gmail.com">setrosarl.int@gmail.com</a></p>
+                            <p><a href="mailto:tchadsetrosarl@gmail.com">tchadsetrosarl@gmail.com</a></p>
+                            <p><a href="mailto:nguerabeg@gmail.com">nguerabeg@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+{% endblock content %}

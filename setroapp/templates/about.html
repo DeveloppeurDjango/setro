@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<section id="about" class="scrollspy-section padding-xlarge">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="section-header">
+                    <div class="title">
+             
+                    </div>
+                    <h2 class="section-title">A propos
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <figure class="jarallax-keep-img">
+                    <img src="{% static 'images/singleimage.jpg' %}" alt="about us" class="jarallax-img single-image">
+                </figure>
+            </div>
+            <div class="col-md-6 description text-lead">
+                <p><strong>SETRO SARL (Société d’Études Techniques et de Réalisation des Ouvrages) est une entreprise spécialisée dans l’étude, 
+                    le suivi et le contrôle technique des travaux. Basée à N’Djaména, au Tchad, notre société met à votre disposition une expertise
+                     avérée dans la gestion et l’accompagnement de projets de construction et d’infrastructures.</strong></p>
+                <p>Forte d’une équipe de professionnels qualifiés, SETRO SARL s’engage à fournir des prestations de haute qualité, alliant rigueur 
+                    technique et innovation, pour garantir la réussite de vos projets. Nous accompagnons nos clients à chaque étape, 
+                    de l’étude initiale à la réalisation, en assurant un suivi minutieux et un contrôle strict pour répondre aux normes en vigueur.</p>
+                <p>Notre engagement repose sur la satisfaction de nos partenaires et clients, 
+                    avec une approche axée sur la qualité, la transparence et le respect des délais.</p>
+
+                <div class="btn-wrap">
+                    <a href="{% url 'gallery' %}"  class="btn btn-accent btn-xlarge btn-rounded">Acceder a la gallery</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock content %}
