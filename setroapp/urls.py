@@ -3,6 +3,7 @@ from .views import home, about, service, contact, confirmation, search, detail, 
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.views.static import serve
 
 urlpatterns = [
     path('', home, name='home'),
@@ -14,6 +15,7 @@ urlpatterns = [
     path('confirmation/', confirmation, name='confirmation'),
     path('article/<int:id_article>/', detail, name="detail"),
     path('article/recherche/', search, name="search"),
+    path('google439126b94a9dcf8a.html', serve, {'document_root': 'setroapp/templates', 'path': 'google439126b94a9dcf8a.html'}),
 ]
 
 # Servir les fichiers statiques et médias en mode développement
